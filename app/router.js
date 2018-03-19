@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('about'); // installed '$ ember g route about'
+  this.route('contact');
+  this.route('rentals');
+  this.route('ember-notes');
 });
 
 export default Router;

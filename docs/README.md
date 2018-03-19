@@ -1,0 +1,50 @@
+!> TODO: duplicate this to `./docs/pages/overview.md` via Grunt.
+
+# My first Ember application
+Shopped around and decided on Ember over Angular or React. One, I can understand Ember for the most part. And many of our widgets at G5 are built in Ember.
+
+The Ember project directory is `ember-learn` for now.
+```
+ember new ember-Learn
+cd ember-learn
+```
+Inside you will find the following
+
+- `.git/`
+- `app/` the application files including templates
+  - `./components/`
+  - `./controllers/`
+  - `./data/` manually added to start config for `ember-data`
+    - primarily JSON for the client-side data storage. Could also contain templates stored as JSON, say as a theme.
+    - also the API response destination for any vendor API configured, say a CouchDB or PostGres database.
+  - `./help/`
+  - `./helpers/`
+  - `./models/` the `.js` part of a model
+  - `./routes/` the `.js` part of a route
+  - `./styles/` the default home of the application's stylesheets
+  - `./templates/` the `.hbs` part of things Ember generates
+    - `./*.hbs` handlebar templates connected to routes
+    - `./application.hbs` the handlebar template for global elements like the header and footer
+    - `./components/`
+  - `./app.js` imports the builders, exports the app
+  - `./index.html` the HTML wrapper
+  - `./resolver.js`
+  - `./router.js` maps the URL routing that Ember is famous for
+- `config/`
+- `_docs/_`
+- `public/` has the `robots.txt` and the favicon
+- `tests/` When Ember generates a test, it lives here
+- `vendor/` the home for non-add-on Add-ons
+  - `./assemble/` the assemble tasks, config, and assets
+  - `./cli-sass/` the source files for the `app/styles` stylesheets
+    - the `ember-cli-sassOptions` plugin is configured as part of the module configuration for the `EmberApp` in the `build.js` file.
+- `.editorconfig`
+- `.ember-cli`
+- `.eslintrc.js` something with lint
+- `.travis.yml` something with travis
+- `.watchmanconfig` something for watchman
+- `ember-cli-build.js` the main file controlling the ember framework
+- `_Gruntfile.js_` the grunt configuration file with task definitions
+- `package-lock.json` All the Node modules installed
+- `package.json` The declared package dependencies and their context managed as part of a Node App project, in this case, Ember
+- `testem.js`

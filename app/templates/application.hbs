@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<!-- this is global content. elements that appear on every route page -->
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+      <h1>Learning Ember</h1>
+    {{/link-to}}
+    <div class="fixed">
+      <nav class="top">
+        {{#link-to "about" class="menu-about"}}About{{/link-to}}
+        {{#link-to "contact" class="menu-contact"}}Contact{{/link-to}}
+        {{#link-to "ember-notes" class="menu-ember-notes"}}Ember Notes{{/link-to}}
+      </nav>
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}} <!-- this is the container for the route content -->
+  </div>
+</div>
