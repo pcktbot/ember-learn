@@ -6,7 +6,7 @@
   - I have definitely gotten use to GitHub's markdown syntax, and would like for text blocks to be rendered from .md, at least for certain pages, like this one.
 
 ## Ember Docs
-Wow, I've a lot to say. Maybe a `./doc`, but instead of a `docsify` install, which is my preference, let's leverage part of Ember to compile them into pages and components of the app. A `component` could be
+Wow, I've a lot to say. Maybe a `./docs`, but instead of a `docsify` install, which is my preference, let's leverage part of Ember to compile them into pages and components of the app. A `component` could be
 ``` markdown
 - A list like this
   - [With Links like](docs/with-links-like.md)
@@ -18,7 +18,7 @@ And make a template for the compiled pages or generating new routes.
 ```
 How does `#link-to` work? It's part of the `ember generate <ARG>` process.
 ?> grunt needs to create a connection between the `.md` files in a directory it's watching, to components like `route` or `component` that creates that EmberApp config. Maybe that's why people use these grunt integrating packages via `npm`...
-!> TODO: compile .hbs files without mapping them in the EmberApp first.
+!> TODO: compile `.hbs` files without mapping them in the EmberApp first.
 !> TODO: grunt task to compile new `route` for `.md` files in a pages directory, and compile `component` for files in a corresponding directory.
 
 This topic will go
