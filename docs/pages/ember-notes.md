@@ -47,6 +47,9 @@ grunt assemble path/to/**/*.md path/to/**/*.hbs
 ```
 with some of the messiness defined in the `Gruntfile`.
 
+### Changing directions on markdown
+This is becoming a bit of a distraction, so shopping for a solution so I can get back to what I was doing, which was learning. Went to Docsify, which is a Vue.js application, but does live compiling of .md files to html. It's called `marked`, installed it as a dependency.
+
 ## Ember Basics
 
 Navigate to your project folder. Run the development server.
