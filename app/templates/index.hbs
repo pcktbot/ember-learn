@@ -4,21 +4,22 @@
       <div class="grid-column">
         <div class="inner-content">
           <div class="top">
-            <span class="left">.left</span>
-            <span class="right">.top.right</span>
+            <span class="left">type</span>
+            <span class="right">test</span>
           </div>
           <div class="second">
-            <span class="left">.left</span>
-            <span class="right">.second.right</span>
+            <span class="left">src</span>
+            <span class="right">component</span>
           </div>
-          <div class="inner-child">
-            <span>Each box is called .inner-content and can include two headers, .top and .second and/or .inner-child. At a minimum, each .inner-content should contain a .inner-child.</span>
-            <code>even a code span man</code>
-          </div>
+          {{#each model as |indexData|}}
+            {{learn-tutorial this=indexData}}
+          {{/each}}
         </div>
         <div class="callout-content">
           <div class="inner-child">
-            <h2>First column callout align right!</h2>
+            {{#each model as |indexData|}}
+              <h2>{{indexData.nom}}</h2>
+            {{/each}}
           </div>
         </div>
         <div class="inner-content">

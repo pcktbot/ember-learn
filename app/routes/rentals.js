@@ -9,9 +9,9 @@ export default Route.extend({
         description: 'a description of things to be.'
       },
       {
-        nom: '',
-        plus: '',
-        description: ''
+        nom: 'model',
+        plus: 'inline data',
+        description: 'you can stash data in JSON in the corresponding routeName.js then loop through a template using Ruby-like do loop. '
       }
     ]
   }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500i,700');
 /* Available Normal 400, semi-bold italic 500i, and bold 700 */
 :root {
-  --theme-color: RGBA(0, 107, 166, 1.00);
+  --theme-color: RGBA(241, 40, 41, 1.00);
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -48,21 +48,21 @@ form {
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
-  border-top: 2px solid RGBA(241, 40, 41, 1.00);
-  border-bottom: 2px solid RGBA(241, 40, 41, 1.00);
+  border-top: 2px solid var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
 }
 form input {
   font-family: monospace;
   width: 55%;
   padding: 15px 10px;
   font-size: 1.2rem;
-  color: RGBA(241, 40, 41, 1.00);
+  color: var(--theme-color);
   border: none;
   outline: none;
 }
 form button {
   width: 45%;
-  background: RGBA(241, 40, 41, 1.00);
+  background: var(--theme-color);
   font-size: 1.2rem;
   color: white;
   transition: all .2s ease-out;
@@ -71,8 +71,8 @@ form button {
   border: none;
 }
 form button:hover {
-  box-shadow: -10px 10px 0 RGBA(241, 40, 41, 1.00);
-  color: RGBA(241, 40, 41, 1.00);
+  box-shadow: -10px 10px 0 var(--theme-color);
+  color: var(--theme-color);
   background-color: transparent;
 }
 .wrapper {
@@ -90,6 +90,9 @@ form button:hover {
   align-items: stretch;
   justify-content: flex-start;
 }
+.full-width {
+  grid-column: 1 / 4;
+}
 .grid-column:first-of-type {
   padding-top: 15px;
 }
@@ -104,10 +107,10 @@ form button:hover {
   transition: all .2s ease-in;
 }
 .inner-content {
-  border: 6px solid RGBA(241, 40, 41, 1.00);
+  border: 6px solid var(--theme-color);
 }
 .inner-content:hover {
-  box-shadow: 10px 10px 0 RGBA(241, 40, 41, 1.00);
+  box-shadow: 10px 10px 0 var(--theme-color);
 }
 .callout-content {
 
@@ -117,12 +120,12 @@ form button:hover {
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  border-bottom: 2px solid RGBA(241, 40, 41, 1.00);
+  border-bottom: 2px solid var(--theme-color);
 }
 .left {
   width: 30%;
   padding: 15px 10px 5px;
-  border-right: 2px solid RGBA(241, 40, 41, 1.00);
+  border-right: 2px solid var(--theme-color);
 }
 .right {
   width: 70%;

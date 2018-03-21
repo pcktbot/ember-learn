@@ -1,11 +1,11 @@
 <div class="map-part">
+  <h2>{{map-title}}</h2>
+  {{mapbox-map
+    divId="map-container"
+    center=(mapbox-coords 37.765 -122.318)
+    onclick="anAction"
+    zoom=30}}
 
-{{mapbox-map
-  divId="map-container"
-  center=(mapbox-coords 37.765 -122.318)
-  onclick="anAction"
-  zoom=30}}
-
-{{yield}}
+  {{yield}}
 </div>
 <a href="https://www.npmjs.com/package/ember-cli-mapbox">Instructions for ember-cli-mapbox</a>

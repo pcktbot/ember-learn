@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="wrapper">
+  <code>Headlines via callout-content</code>
+  <div class="grid-content">
+    <div class="grid-column full-width">
+      <div class="callout-content">
+        <div class="inner-child">
+          {{#each model as |callout|}}
+            <h2>{{callout}}</h2>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
