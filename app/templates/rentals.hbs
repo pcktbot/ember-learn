@@ -1,8 +1,22 @@
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Welcome!</h2>
-  <p>We hope you find exactly what you're looking for in a place to stay.</p>
-  {{#link-to "about" class="button"}}
-    About Us
-  {{/link-to}}
+<div class="wrapper">
+  <code>for populating the model() data</code>
+  <div class="grid-content">
+    <div class="grid-column">
+      {{#each model as |rental|}}
+      <div class="inner-content">
+        <div class="top">
+          <span class="left">nom</span>
+          <span class="right">{{rental.nom}}</span>
+        </div>
+        <div class="second">
+          <span class="left">plus</span>
+          <span class="right">{{rental.plus}}</span>
+        </div>
+        <div class="inner-child">
+          {{rental.description}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
 </div>

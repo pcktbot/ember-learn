@@ -67,7 +67,6 @@ Ember uses `handlebars` for templating. These are `.hbs` files generated when a 
 
 Install `watchman` so the dev server will update automatically when a change is applied.
 
-
 ## Ember Tests
 Before you deploy an ember app, you will want some testing on it. Those are new to me, so I won't say how to they work other than they are sets of conditions.
 
@@ -114,7 +113,6 @@ Load the tasks in the `Gruntfile` thus
 ``` js
 grunt.loadNpmTasks('assemble');
 grunt.loadNPMTasks('grunt-newer');
-
 grunt.registerTask('default', ['newer:assemble']);
 ```
 
@@ -122,6 +120,7 @@ The gist here is that `grunt` is going to mange the `assemble` task which is goi
 
 Since this can render its own template files in addition to page files, I could register it as a vender in `ember` as well. Otherwise, what in `ember` tells `grunt` to grunt?
 
+#### An Example future link to future documentation
 > [See Future Page with Solution](docs/solution.md)
 
 Grunt has to compile as part of the watchman activities during development. In a build environment, grunt only needs to run during the compile. I haven't gotten that far, but I expect that `ember build` takes the content from `./app` and creates a copy in a `./dev` or whatever folder.
